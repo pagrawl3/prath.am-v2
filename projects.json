@@ -1,0 +1,169 @@
+{ "projects" :	[
+	{
+		"name"			: "ATTUNED",
+		"logo"			: "attuned",
+		"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, commodi, dignissimos minima facere atque laborum magnam similique vitae itaque quam delectus veritatis alias fuga? Labore, tempore, natus, deserunt, distinctio rerum unde recusandae facilis quaerat inventore quia ut numquam voluptates! Quod, unde dolor culpa? Natus, iusto, commodi magnam quas voluptatum at saepe id ratione officia alias voluptas doloremque ab beatae non asperiores? Perspiciatis, a autem perferendis ut est doloribus sequi delectus ullam ne",
+		"tech"			: [
+			{
+				"name"	: "HTML/CSS/JS",
+				"logo"	: "html"
+			},
+			{
+				"name"	: "NODE.JS",
+				"logo"	: "node"
+			},
+			{
+				"name"	: "SOCKET.IO",
+				"logo"	: "socket"
+			},
+			{
+				"name"	: "LIBSPOTIFY",
+				"logo"	: "spotify"
+			},
+			{
+				"name"	: "PYTHON",
+				"logo"	: "python"
+			}
+		]	
+	},
+	{
+		"name"			: "MUSYNC",
+		"logo"			: "musync",
+		"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, commodi, dignissimos minima facere atque laborum magnam similique vitae itaque quam delectus veritatis alias fuga? Labore, tempore, natus, deserunt, distinctio rerum unde recusandae facilis quaerat inventore quia ut numquam voluptates! Quod, unde dolor culpa? Natus, iusto, commodi magnam quas voluptatum at saepe id ratione officia alias voluptas doloremque ab beatae non asperiores? Perspiciatis, a autem perferendis ut est doloribus sequi delectus ullam ne",
+		"tech"			: [
+			{
+				"name"	: "HTML/CSS/JS",
+				"logo"	: "html"
+			},
+			{
+				"name"	: "NODE.JS",
+				"logo"	: "node"
+			},
+			{
+				"name"	: "SOCKET.IO",
+				"logo"	: "socket"
+			},
+			{
+				"name"	: "MONGODB",
+				"logo"	: "mongo"
+			},
+			{
+				"name"	: "THE ECHONEST",
+				"logo"	: "echonest"
+			},
+			{
+				"name"	: "FILEPICKER.IO",
+				"logo"	: "filepicker"
+			},
+			{
+				"name"	: "AMAZON S3",
+				"logo"	: "aws"
+			}
+		]	
+	},
+	{
+		"name"			: "DUMBSOUND",
+		"logo"			: "dumbsound",
+		"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, commodi, dignissimos minima facere atque laborum magnam similique vitae itaque quam delectus veritatis alias fuga? Labore, tempore, natus, deserunt, distinctio rerum unde recusandae facilis quaerat inventore quia ut numquam voluptates! Quod, unde dolor culpa? Natus, iusto, commodi magnam quas voluptatum at saepe id ratione officia alias voluptas doloremque ab beatae non asperiores? Perspiciatis, a autem perferendis ut est doloribus sequi delectus ullam ne",
+		"tech"			: [
+			{
+				"name"	: "HTML/CSS/JS",
+				"logo"	: "html"
+			},
+			{
+				"name"	: "NODE.JS",
+				"logo"	: "node"
+			},
+			{
+				"name"	: "TWILIO",
+				"logo"	: "twilio"
+			},
+			{
+				"name"	: "YOUTUBE",
+				"logo"	: "youtube"
+			},
+			{
+				"name"	: "SOUNDCLOUD",
+				"logo"	: "soundcloud"
+			}
+		]	
+	},
+	{
+		"name"			: "SMARTFOLDER",
+		"logo"			: "smartfolder",
+		"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, commodi, dignissimos minima facere atque laborum magnam similique vitae itaque quam delectus veritatis alias fuga? Labore, tempore, natus, deserunt, distinctio rerum unde recusandae facilis quaerat inventore quia ut numquam voluptates! Quod, unde dolor culpa? Natus, iusto, commodi magnam quas voluptatum at saepe id ratione officia alias voluptas doloremque ab beatae non asperiores? Perspiciatis, a autem perferendis ut est doloribus sequi delectus ullam ne",
+		"tech"			: [
+			{
+				"name"	: "HTML/CSS/JS",
+				"logo"	: "html"
+			},
+			{
+				"name"	: "NODE.JS",
+				"logo"	: "node"
+			},
+			{
+				"name"	: "SOCKET.IO",
+				"logo"	: "socket"
+			},
+			{
+				"name"	: "MONGODB",
+				"logo"	: "mongo"
+			},
+			{
+				"name"	: "REDIS",
+				"logo"	: "redis"
+			},
+			{
+				"name"	: "AMAZON S3",
+				"logo"	: "aws"
+			},
+			{
+				"name"	: "PYTHON",
+				"logo"	: "python"
+			},
+			{
+				"name"	: "PHP",
+				"logo"	: "php"
+			},
+			{
+				"name"	: "FILEPICKER.IO",
+				"logo"	: "filepicker"
+			},
+			{
+				"name"	: "HARDWARE",
+				"logo"	: "arduino"
+			}
+		]	
+	},
+	{
+		"name"			: "TABIFY",
+		"logo"			: "tabify",
+		"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, commodi, dignissimos minima facere atque laborum magnam similique vitae itaque quam delectus veritatis alias fuga? Labore, tempore, natus, deserunt, distinctio rerum unde recusandae facilis quaerat inventore quia ut numquam voluptates! Quod, unde dolor culpa? Natus, iusto, commodi magnam quas voluptatum at saepe id ratione officia alias voluptas doloremque ab beatae non asperiores? Perspiciatis, a autem perferendis ut est doloribus sequi delectus ullam ne",
+		"tech"			: [
+			{
+				"name"	: "HTML/CSS/JS",
+				"logo"	: "html"
+			},
+			{
+				"name"	: "NODE.JS",
+				"logo"	: "node"
+			},
+			{
+				"name"	: "SOCKET.IO",
+				"logo"	: "socket"
+			},
+			{
+				"name"	: "SPOTIFY APPLICATION",
+				"logo"	: "spotify"
+			},
+			{
+				"name"	: "JAVA",
+				"logo"	: "java"
+			},
+			{
+				"name"	: "THE ECHONEST",
+				"logo"	: "echonest"
+			}
+		]	
+	}
+]}

@@ -1,7 +1,199 @@
-nav#side-menu
-	.small.icon.index
-	.small.icon.projects
-	.small.icon.profile.selected
 header
 	h1.title PROFILE
-	hr
+	ul#profile-menu
+		li.profile-menu-item EDUCATION
+		li.profile-menu-item EXPERIENCE
+		li.profile-menu-item SKILLS
+		li.profile-menu-item MISC
+section#profile-items
+	article.profile-item.white-card#education-item
+		.profile-icon#education(style="background-image: url(../img/education.svg);")
+		h4.profile-name Education
+		hr
+		ul.timeline-items
+			.timeline
+			li.timeline-item
+				.date-wrapper
+					.timeline-dot
+					.date 2009
+				.timeline-data
+					.timeline-sub-item
+						.timeline-sub-image(style="background-image: url(../img/education/dps.png);")
+						.timeline-sub-data
+							h3.timeline-sub-name Delhi Public School R.K. Puram
+							h3.timeline-sub-type High School
+			li.timeline-item
+				.date-wrapper
+					.timeline-dot
+					.date 2009
+				.timeline-data
+					.timeline-sub-item
+						.timeline-sub-image(style="background-image: url(../img/education/illinois.png);")
+						.timeline-sub-data
+							h3.timeline-sub-name University of Illinois at Urbana-Champaign
+							h3.timeline-sub-type Computer Engineering
+	article.profile-item.white-card#experience-item
+		.profile-icon#experience(style="background-image: url(../img/experience.svg);")
+		h4.profile-name Experience
+		hr
+		ul.timeline-items
+			.timeline
+			li.timeline-item
+				.date-wrapper
+					.timeline-dot
+					.date SUMMER <br> 2013
+				.timeline-data
+					.timeline-sub-item
+						.timeline-sub-image(style="background-image: url(../img/experience/yahoo.png);")
+						.timeline-sub-data
+							h3.timeline-sub-name Yahoo!
+							h3.timeline-sub-type Technical Intern
+			li.timeline-item
+				.date-wrapper
+					.timeline-dot
+					.date 2012
+				.timeline-data
+					.timeline-sub-item
+						.timeline-sub-image(style="background-image: url(../img/experience/frc.png);")
+						.timeline-sub-data
+							h3.timeline-sub-name Family Resiliency Center
+							h3.timeline-sub-type Technical Intern
+			li.timeline-item
+				.date-wrapper
+					.timeline-dot
+					.date 2012-2013
+				.timeline-data
+					.timeline-sub-item
+						.timeline-sub-image(style="background-image: url(../img/experience/eager.png);")
+						.timeline-sub-data
+							h3.timeline-sub-name EagerPanda
+							h3.timeline-sub-type UI/UX Designer
+			li.timeline-item
+				.date-wrapper
+					.timeline-dot
+					.date SUMMER <br> 2012
+				.timeline-data
+					.timeline-sub-item
+						.timeline-sub-image(style="background-image: url(../img/experience/paytm.png);")
+						.timeline-sub-data
+							h3.timeline-sub-name PayTM
+							h3.timeline-sub-type iOS Developer
+	article.profile-item.white-card#skills-item
+		.profile-icon#skills(style="background-image: url(../img/skills.svg);")
+		h4.profile-name Skills
+		hr
+		ul.skill-boxes
+			li.skill-box
+				.skill-header Header
+				.skill-sub-header Sub-Header
+				ul.skills
+					li.skill
+						.skill-title Skill
+						.skill-score.high 9
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.high 9
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.medium 7
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.medium 7
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.low 5
+						hr
+			li.skill-box
+				.skill-header Header
+				.skill-sub-header Sub-Header
+				ul.skills
+					li.skill
+						.skill-title Skill
+						.skill-score.high 9
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.high 9
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.medium 7
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.medium 7
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.low 5
+						hr
+			li.skill-box
+				.skill-header Header
+				.skill-sub-header Sub-Header
+				ul.skills
+					li.skill
+						.skill-title Skill
+						.skill-score.high 9
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.high 9
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.medium 7
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.medium 7
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.low 5
+						hr
+			li.skill-box
+				.skill-header Header
+				.skill-sub-header Sub-Header
+				ul.skills
+					li.skill
+						.skill-title Skill
+						.skill-score.high 9
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.high 9 
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.medium 7
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.medium 7
+						hr
+					li.skill
+						.skill-title Skill
+						.skill-score.low 5
+						hr
+			h2.misc-skills MISCELLANEOUS SKILLS
+				ul.misc-skill-list
+					li.misc-skill-item MISC SKILL
+					li.misc-skill-item MISC SKILL
+					li.misc-skill-item MISC SKILL
+					li.misc-skill-item MISC SKILL
+					li.misc-skill-item MISC SKILL
+					li.misc-skill-item MISC SKILL
+					li.misc-skill-item MISC SKILL
+	article.profile-item.white-card#misc-item
+		.profile-icon#misc(style="background-image: url(../img/misc.svg);")
+		h4.profile-name Miscellaneous
+		hr
+		ul.misc-table
+			li.misc-item item
+			li.misc-item item
+			li.misc-item item
+include ../includes/social
