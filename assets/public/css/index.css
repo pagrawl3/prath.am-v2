@@ -30,6 +30,22 @@ body.no-scroll {
     -webkit-transform: rotate(360deg);
   }
 }
+@-moz-keyframes rotating {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .mobile {
   display: none;
 }
@@ -42,6 +58,8 @@ body.no-scroll {
 }
 .rotating {
   -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
 }
 #loader {
   position: absolute;
