@@ -5,8 +5,10 @@ $(document).ready(function() {
 	var showContent = function() {
 		$('#wrapper').css('opacity', '1');
 		$('#wrapper').css('-webkit-transform', 'scale(0.97, 0.97)');
+		$('#wrapper').css('-moz-transform', 'scale(0.97, 0.97)');
 		setTimeout(function(){
 			$('#wrapper').css('-webkit-transform', 'scale(1, 1)');
+			$('#wrapper').css('-moz-transform', 'scale(1, 1)');
 			$('body').removeClass('no-scroll');
 		},300);
 		$('#loader').css('opacity', '0');
