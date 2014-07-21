@@ -7,6 +7,7 @@ $(document).ready(function() {
 		$('#wrapper').css('-webkit-transform', 'scale(0.97, 0.97)');
 		setTimeout(function(){
 			$('#wrapper').css('-webkit-transform', 'scale(1, 1)');
+			$('body').removeClass('no-scroll');
 		},300);
 		$('#loader').css('opacity', '0');
 	};
@@ -15,19 +16,39 @@ $(document).ready(function() {
 		$('#wrapper').css('opacity', '0');
 		$('#loader').css('opacity', '1');
 		$('#wrapper').css('-webkit-transform', 'scale(1.03, 1.03)');
+		setTimeout(function(){$(window).scrollTop(0), 300});
+		$('body').addClass('no-scroll');
+
 	};
 
+	var once = false;
+	var initScrollTop;
 	var parallaxScroll = function() {
-		var scrolled = $(window).scrollTop();
+		if (!once) {
+			initScrollTop = 300;
+			$('#profile-menu').css('top', initScrollTop);
+			once = true;
+		}
+		var scrolled = $(document).scrollTop();
 		if (scrolled<800)
 			$('body').css('backgroundPosition', '0px '+(scrolled*-0.25)+'px');
 		else {
 			$('body').css('backgroundRepeat', 'no-repeat');
 		}
+		if (scrolled > initScrollTop) {
+			// $('#profile-menu').css('position', 'fixed');
+			// $('#profile-menu').css('top', '0');
+			$('#profile-menu').css('backgroundColor', '#000');
+			$('#profile-menu').css('top', (scrolled - 22));
+		} else {
+			$('#profile-menu').css('backgroundColor', 'transparent');
+			$('#profile-menu').css('top', initScrollTop-22);
+		}
 	};
 
 	var loadPartial = function(partial) {
 		hideContent();
+		// $("html, body").animate({ scrollTop: 1 }, 50);
 		$.get('/partials/'+partial, function(data) {
 			setTimeout(function(){
 				$('#wrapper').html(data);
@@ -53,6 +74,11 @@ $(document).ready(function() {
 	var hideBubble = function() {
 		$('.bubble').css({'opacity': 0});
 	};
+
+	var goToDiv = function(div) {
+		console.log('going to ', div);
+		$("html, body").animate({ scrollTop: $(div).offset().top - 120 });
+	}
 
 	// var socket = io.connect('/');
 
@@ -87,6 +113,10 @@ $(document).ready(function() {
 		$('nav#side-menu .small.icon.index').addClass('selected');
 		window.location.hash = "home";
 		loadPartial('index');
+	});
+
+	$('html').on('click','.profile-menu-item', function(){
+		goToDiv($(this).attr('destination-div'));
 	});
 
 	$('html').on('mouseenter', 'li.tech', function() {

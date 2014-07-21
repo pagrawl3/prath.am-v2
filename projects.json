@@ -2,7 +2,7 @@
 	{
 		"name"			: "ATTUNED",
 		"logo"			: "attuned",
-		"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, commodi, dignissimos minima facere atque laborum magnam similique vitae itaque quam delectus veritatis alias fuga? Labore, tempore, natus, deserunt, distinctio rerum unde recusandae facilis quaerat inventore quia ut numquam voluptates! Quod, unde dolor culpa? Natus, iusto, commodi magnam quas voluptatum at saepe id ratione officia alias voluptas doloremque ab beatae non asperiores? Perspiciatis, a autem perferendis ut est doloribus sequi delectus ullam ne",
+		"description"	: "Attuned is a Spotify based jukebox service for parties. It allows multiple people to manage a centrally running spotify server (On a device such as a raspberry pi). Songs can be added, queued, upvoted, downvoted etc. In addition, it also streams the file to the client browser in sync allowing the same song to be streamed to multiple devices in sync. This opens up possibilities such as multi room audio (using musync technology). All of this is done in the browser itself making it cross-platform.",
 		"tech"			: [
 			{
 				"name"	: "HTML/CSS/JS",
@@ -29,7 +29,7 @@
 	{
 		"name"			: "MUSYNC",
 		"logo"			: "musync",
-		"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, commodi, dignissimos minima facere atque laborum magnam similique vitae itaque quam delectus veritatis alias fuga? Labore, tempore, natus, deserunt, distinctio rerum unde recusandae facilis quaerat inventore quia ut numquam voluptates! Quod, unde dolor culpa? Natus, iusto, commodi magnam quas voluptatum at saepe id ratione officia alias voluptas doloremque ab beatae non asperiores? Perspiciatis, a autem perferendis ut est doloribus sequi delectus ullam ne",
+		"description"	: "Developed at Yahoo Intern Hack 2013 (Winner). This web based service allows users to sync an audio file across multiple devices. For example, a song uploaded to one of the rooms, would play across all clients logged in to the same room. Allowing possibilities such as multi room audio, sound amplification through aggregation and much more. It is completely web based and can be used with smartphones as well. It also uses echonest to automatically get all metadata for the audio file uploaded (if music). Uses web sockets for syncing.",
 		"tech"			: [
 			{
 				"name"	: "HTML/CSS/JS",
@@ -64,7 +64,7 @@
 	{
 		"name"			: "DUMBSOUND",
 		"logo"			: "dumbsound",
-		"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, commodi, dignissimos minima facere atque laborum magnam similique vitae itaque quam delectus veritatis alias fuga? Labore, tempore, natus, deserunt, distinctio rerum unde recusandae facilis quaerat inventore quia ut numquam voluptates! Quod, unde dolor culpa? Natus, iusto, commodi magnam quas voluptatum at saepe id ratione officia alias voluptas doloremque ab beatae non asperiores? Perspiciatis, a autem perferendis ut est doloribus sequi delectus ullam ne",
+		"description"	: "Developed at PennApps 2013. This service allows users to listen to any song on youtube using only a voice connection on their phone (no cellular data/wifi required). The user is required to send a message to one of the dumbsound phone numbers (Twilio) with the name of the video who's audio they want delivered along with the destination number, our service then finds the video on youtube and then plays back the audio from the video via a phone call. Great for quick song checks and pranks.",
 		"tech"			: [
 			{
 				"name"	: "HTML/CSS/JS",
@@ -91,7 +91,7 @@
 	{
 		"name"			: "SMARTFOLDER",
 		"logo"			: "smartfolder",
-		"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, commodi, dignissimos minima facere atque laborum magnam similique vitae itaque quam delectus veritatis alias fuga? Labore, tempore, natus, deserunt, distinctio rerum unde recusandae facilis quaerat inventore quia ut numquam voluptates! Quod, unde dolor culpa? Natus, iusto, commodi magnam quas voluptatum at saepe id ratione officia alias voluptas doloremque ab beatae non asperiores? Perspiciatis, a autem perferendis ut est doloribus sequi delectus ullam ne",
+		"description"	: "This started out as a project idea for IEEE Make it Happen 2013, an ECE competition. The idea was then selected, and was granted funding from IEEE to realize the idea. It placed 2nd in the overall competition. Its a service that helped with the organization of documents. The user could scan all his papers through our hardware device, the device would then upload the papers to our servers and through OCR determine the nature of the document. The server would then assign a category to the document and then send the category back to the device. The device would then subsequently put it in one of its 5 drawers based on the category. The user could then access the paper either through the cloud or physically through the drawer.",
 		"tech"			: [
 			{
 				"name"	: "HTML/CSS/JS",
@@ -138,7 +138,7 @@
 	{
 		"name"			: "TABIFY",
 		"logo"			: "tabify",
-		"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, commodi, dignissimos minima facere atque laborum magnam similique vitae itaque quam delectus veritatis alias fuga? Labore, tempore, natus, deserunt, distinctio rerum unde recusandae facilis quaerat inventore quia ut numquam voluptates! Quod, unde dolor culpa? Natus, iusto, commodi magnam quas voluptatum at saepe id ratione officia alias voluptas doloremque ab beatae non asperiores? Perspiciatis, a autem perferendis ut est doloribus sequi delectus ullam ne",
+		"description"	: "Developed at the Regional Facebook Hackathon 2013. This Spotify app for guitarists allows users to play along to songs within the Spotify app itself. The service runs inside spotify and automatically downloads and syncs the currently playing song's tablature and music sheet. All of it is done automatically and instantly. Similar to the lyric syncing applications in Spotify but for tabs and music sheets.",
 		"tech"			: [
 			{
 				"name"	: "HTML/CSS/JS",

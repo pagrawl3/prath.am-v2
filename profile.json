@@ -1,0 +1,244 @@
+{	
+	"profile"	: {
+		"education" : [
+			{
+				"title"		: "Delhi Public School R.K. Puram",
+				"type"		: "High School",
+				"logo"		: "/education/dps.png",
+				"year"		: 2011,
+				"link"		: "http://google.com",
+				"courses"	: []
+			},
+			{
+				"title"		: "University of Illinois at Urbana-Champaign",
+				"type"		: "BSc. Computer Engineering",
+				"logo"		: "/education/illinois.png",
+				"year"		: 2015,
+				"link"		: "http://google.com",
+				"courses"	: [
+					{
+						"title"	: "ECE 110",
+						"link"	: "http://google.com"
+					}
+				]
+			}
+		],
+		"experience" : [
+			{
+				"title"			: "Zoook",
+				"job"			: "Lead Full Stack Developer",
+				"year"			: "Summer 2014",
+				"logo"			: "/experience/zoook.png",
+				"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quas odit illo quaerat, nobis, nisi iste tenetur a nesciunt eveniet nulla doloribus harum porro aperiam recusandae pariatur eum odio! Blanditiis!",
+				"link"			: "http://zoook.com/"
+			},
+			{
+				"title"			: "Yahoo!",
+				"job"			: "Technical Intern",
+				"year"			: "Summer 2013",
+				"logo"			: "/experience/yahoo.png",
+				"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quas odit illo quaerat, nobis, nisi iste tenetur a nesciunt eveniet nulla doloribus harum porro aperiam recusandae pariatur eum odio! Blanditiis!",
+				"link"			: "http://yahoo.com/"
+			},
+			{
+				"title"			: "EagerPanda",
+				"job"			: "UI/UX Designer",
+				"year"			: "2012-2013",
+				"logo"			: "/experience/eager.png",
+				"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quas odit illo quaerat, nobis, nisi iste tenetur a nesciunt eveniet nulla doloribus harum porro aperiam recusandae pariatur eum odio! Blanditiis!",
+				"link"			: "http://eagerpanda.com/"
+			},
+			{
+				"title"			: "Family Resiliency Center",
+				"job"			: "Technical Intern",
+				"year"			: "2012",
+				"logo"			: "/experience/frc.png",
+				"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quas odit illo quaerat, nobis, nisi iste tenetur a nesciunt eveniet nulla doloribus harum porro aperiam recusandae pariatur eum odio! Blanditiis!",
+				"link"			: "http://frc.illinois.edu/"
+			},
+			{
+				"title"			: "PayTM",
+				"job"			: "iOS Developer",
+				"year"			: "Summer 2012",
+				"logo"			: "/experience/paytm.png",
+				"description"	: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quas odit illo quaerat, nobis, nisi iste tenetur a nesciunt eveniet nulla doloribus harum porro aperiam recusandae pariatur eum odio! Blanditiis!",
+				"link"			: "https://itunes.apple.com/in/app/mobile-dth-recharge-shopping/id473941634?mt=8"
+			}
+		],
+		"skills" : {
+			"boxes" : [
+				{
+					"title"		: "Front End",
+					"subtitle"	: "Web Design",
+					"skillset"	: [
+						{
+							"title"	: "Core CSS/HTML",
+							"link"	: "http://google.com",
+							"score"	: 9
+						},
+						{
+							"title"	: "Core Javascript",
+							"link"	: "http://google.com",
+							"score"	: 8
+						},
+						{
+							"title"	: "JQuery/ZeptoJS",
+							"link"	: "http://google.com",
+							"score"	: 9
+						},
+						{
+							"title"	: "LESS CSS",
+							"link"	: "http://google.com",
+							"score"	: 8
+						},
+						{
+							"title"	: "Jade",
+							"link"	: "http://google.com",
+							"score"	: 8
+						}
+					]
+				},
+				{
+					"title"		: "Back End",
+					"subtitle"	: "Web Servers & Applications",
+					"skillset"	: [
+						{
+							"title"	: "nodeJS",
+							"link"	: "http://google.com",
+							"score"	: 9
+						},
+						{
+							"title"	: "AWS",
+							"link"	: "http://google.com",
+							"score"	: 8
+						},
+						{
+							"title"	: "Express",
+							"link"	: "http://google.com",
+							"score"	: 8
+						},
+						{
+							"title"	: "mongoDB",
+							"link"	: "http://google.com",
+							"score"	: 7
+						},
+						{
+							"title"	: "Socket.IO",
+							"link"	: "http://google.com",
+							"score"	: 7
+						}
+					]
+				},
+				{
+					"title"		: "Core Programming",
+					"subtitle"	: "Generic Programming Languages",
+					"skillset"	: [
+						{
+							"title"	: "C/C++",
+							"link"	: "http://google.com",
+							"score"	: 8
+						},
+						{
+							"title"	: "Python",
+							"link"	: "http://google.com",
+							"score"	: 7
+						},
+						{
+							"title"	: "Objective-C",
+							"link"	: "http://google.com",
+							"score"	: 6
+						},
+						{
+							"title"	: "Swift",
+							"link"	: "http://google.com",
+							"score"	: 6
+						},
+						{
+							"title"	: "Java",
+							"link"	: "http://google.com",
+							"score"	: 2
+						}
+					]
+				},
+				{
+					"title"		: "UI/UX Design & Media",
+					"subtitle"	: "Everything Design.",
+					"skillset"	: [
+						{
+							"title"	: "Photoshop",
+							"link"	: "http://google.com",
+							"score"	: 9
+						},
+						{
+							"title"	: "After Effects",
+							"link"	: "http://google.com",
+							"score"	: 8
+						},
+						{
+							"title"	: "Cinema4D",
+							"link"	: "http://google.com",
+							"score"	: 7
+						},
+						{
+							"title"	: "Flash",
+							"link"	: "http://google.com",
+							"score"	: 7
+						},
+						{
+							"title"	: "Illustrator",
+							"link"	: "http://google.com",
+							"score"	: 5
+						}
+					]
+				}
+			],
+			"misc" : [
+				{
+					"title" : "Git",
+					"link"	: "http://google.com"
+				},
+				{
+					"title" : "Console/Terminal",
+					"link"	: "http://google.com"
+				},
+				{
+					"title" : "Arduino",
+					"link"	: "http://google.com"
+				},
+				{
+					"title" : "Raspberry Pi",
+					"link"	: "http://google.com"
+				},
+				{
+					"title" : "Foundation CSS",
+					"link"	: "http://google.com"
+				},
+				{
+					"title" : "Sensor & Wireless Mesh Networks",
+					"link"	: "http://google.com"
+				},
+				{
+					"title" : "Spotify API",
+					"link"	: "http://google.com"
+				},
+				{
+					"title" : "Twilio API",
+					"link"	: "http://google.com"
+				},
+				{
+					"title" : "Something Else Here",
+					"link"	: "http://google.com"
+				}
+			]
+		},
+		"misc"	: [ 
+			"Hackathons attended: PennApps 2013, Facebook Hackathon 2012, Facebook Hackathon 2013, Coyote Hack 2012, Yahoo Intern Hackathon 2013, AngelHack 2013, TATA Hackathon 2013",
+			"Yahoo! Intern Hack Winner 2013",
+			"Designed an arduino based autonomous car",
+			"Created a zigbee mesh sensor network for home automation",
+			"Created custom arduinos for an embedded project using ATMegas",
+			"Hobbies include basketball, guitar, fiction, video games, movies"
+		]
+
+	}
+}

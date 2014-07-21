@@ -1,10 +1,10 @@
 header
 	h1.title PROFILE
 	ul#profile-menu
-		li.profile-menu-item EDUCATION
-		li.profile-menu-item EXPERIENCE
-		li.profile-menu-item SKILLS
-		li.profile-menu-item MISC
+		li.profile-menu-item(destination-div="#education") EDUCATION
+		li.profile-menu-item(destination-div="#experience") EXPERIENCE
+		li.profile-menu-item(destination-div="#skills") SKILLS
+		li.profile-menu-item(destination-div="#misc") MISC
 section#profile-items
 	article.profile-item.white-card#education-item
 		.profile-icon#education(style="background-image: url(../img/education.svg);")
@@ -12,188 +12,70 @@ section#profile-items
 		hr
 		ul.timeline-items
 			.timeline
-			li.timeline-item
-				.date-wrapper
-					.timeline-dot
-					.date 2009
-				.timeline-data
-					.timeline-sub-item
-						.timeline-sub-image(style="background-image: url(../img/education/dps.png);")
-						.timeline-sub-data
-							h3.timeline-sub-name Delhi Public School R.K. Puram
-							h3.timeline-sub-type High School
-			li.timeline-item
-				.date-wrapper
-					.timeline-dot
-					.date 2009
-				.timeline-data
-					.timeline-sub-item
-						.timeline-sub-image(style="background-image: url(../img/education/illinois.png);")
-						.timeline-sub-data
-							h3.timeline-sub-name University of Illinois at Urbana-Champaign
-							h3.timeline-sub-type Computer Engineering
+			- each item in profile.education
+				li.timeline-item
+					.date-wrapper
+						.timeline-dot
+						.date #{item.year}
+					.timeline-data
+						.timeline-sub-item
+							.timeline-sub-image(style="background-image: url(../img#{item.logo});")
+							.timeline-sub-data
+								h3.timeline-sub-name #{item.title}
+								h3.timeline-sub-type #{item.type}
+								h3.timeline-sub-type.mobile #{item.year}
+			
 	article.profile-item.white-card#experience-item
 		.profile-icon#experience(style="background-image: url(../img/experience.svg);")
 		h4.profile-name Experience
 		hr
 		ul.timeline-items
 			.timeline
-			li.timeline-item
-				.date-wrapper
-					.timeline-dot
-					.date SUMMER <br> 2013
-				.timeline-data
-					.timeline-sub-item
-						.timeline-sub-image(style="background-image: url(../img/experience/yahoo.png);")
-						.timeline-sub-data
-							h3.timeline-sub-name Yahoo!
-							h3.timeline-sub-type Technical Intern
-			li.timeline-item
-				.date-wrapper
-					.timeline-dot
-					.date 2012
-				.timeline-data
-					.timeline-sub-item
-						.timeline-sub-image(style="background-image: url(../img/experience/frc.png);")
-						.timeline-sub-data
-							h3.timeline-sub-name Family Resiliency Center
-							h3.timeline-sub-type Technical Intern
-			li.timeline-item
-				.date-wrapper
-					.timeline-dot
-					.date 2012-2013
-				.timeline-data
-					.timeline-sub-item
-						.timeline-sub-image(style="background-image: url(../img/experience/eager.png);")
-						.timeline-sub-data
-							h3.timeline-sub-name EagerPanda
-							h3.timeline-sub-type UI/UX Designer
-			li.timeline-item
-				.date-wrapper
-					.timeline-dot
-					.date SUMMER <br> 2012
-				.timeline-data
-					.timeline-sub-item
-						.timeline-sub-image(style="background-image: url(../img/experience/paytm.png);")
-						.timeline-sub-data
-							h3.timeline-sub-name PayTM
-							h3.timeline-sub-type iOS Developer
+			- each job in profile.experience
+				li.timeline-item
+					.date-wrapper
+						.timeline-dot
+						.date #{job.year}
+					.timeline-data
+						.timeline-sub-item
+							.timeline-sub-image(style="background-image: url(../img#{job.logo});")
+							.timeline-sub-data
+								h3.timeline-sub-name #{job.title}
+								h3.timeline-sub-type #{job.job}
+								h3.timeline-sub-type.mobile #{job.year}
+
 	article.profile-item.white-card#skills-item
 		.profile-icon#skills(style="background-image: url(../img/skills.svg);")
 		h4.profile-name Skills
 		hr
 		ul.skill-boxes
-			li.skill-box
-				.skill-header Header
-				.skill-sub-header Sub-Header
-				ul.skills
-					li.skill
-						.skill-title Skill
-						.skill-score.high 9
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.high 9
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.medium 7
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.medium 7
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.low 5
-						hr
-			li.skill-box
-				.skill-header Header
-				.skill-sub-header Sub-Header
-				ul.skills
-					li.skill
-						.skill-title Skill
-						.skill-score.high 9
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.high 9
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.medium 7
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.medium 7
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.low 5
-						hr
-			li.skill-box
-				.skill-header Header
-				.skill-sub-header Sub-Header
-				ul.skills
-					li.skill
-						.skill-title Skill
-						.skill-score.high 9
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.high 9
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.medium 7
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.medium 7
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.low 5
-						hr
-			li.skill-box
-				.skill-header Header
-				.skill-sub-header Sub-Header
-				ul.skills
-					li.skill
-						.skill-title Skill
-						.skill-score.high 9
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.high 9 
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.medium 7
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.medium 7
-						hr
-					li.skill
-						.skill-title Skill
-						.skill-score.low 5
-						hr
+			- each box in profile.skills.boxes
+				li.skill-box
+					.skill-header #{box.title}
+					.skill-sub-header #{box.subtitle}
+					ul.skills
+						- each skill in box.skillset
+							li.skill
+								.skill-title #{skill.title}
+								if skill.score > 7
+									.skill-score.high #{skill.score}
+								else if skill.score > 5
+									.skill-score.medium #{skill.score}
+								else
+									.skill-score.low #{skill.score}
+								hr
+
 			h2.misc-skills MISCELLANEOUS SKILLS
 				ul.misc-skill-list
-					li.misc-skill-item MISC SKILL
-					li.misc-skill-item MISC SKILL
-					li.misc-skill-item MISC SKILL
-					li.misc-skill-item MISC SKILL
-					li.misc-skill-item MISC SKILL
-					li.misc-skill-item MISC SKILL
-					li.misc-skill-item MISC SKILL
+					- each misc in profile.skills.misc
+						li.misc-skill-item #{misc.title}
+					
 	article.profile-item.white-card#misc-item
 		.profile-icon#misc(style="background-image: url(../img/misc.svg);")
 		h4.profile-name Miscellaneous
 		hr
 		ul.misc-table
-			li.misc-item item
-			li.misc-item item
-			li.misc-item item
+			- each misc in profile.misc
+				li.misc-item #{misc}
+
 include ../includes/social

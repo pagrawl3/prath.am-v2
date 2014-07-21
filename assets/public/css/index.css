@@ -2,12 +2,16 @@
 @import url(http://fonts.googleapis.com/css?family=Great+Vibes);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed: 400italic, 400, 300, 700);
 body {
-  background: url(../img/bg.jpg);
+  background-image: url(../img/bg.jpg);
   background-attachment: fixed;
+  background-color: #111;
   color: white;
   font-family: 'futura-pt', sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
+}
+body.no-scroll {
+  overflow: hidden;
 }
 button {
   border: 0px;
@@ -25,6 +29,9 @@ button {
     -webkit-transform: rotate(360deg);
   }
 }
+.mobile {
+  display: none;
+}
 .transition {
   -webkit-transition: 0.2s ease-out;
   -moz-transition: 0.2s ease-out;
@@ -39,6 +46,7 @@ button {
   position: absolute;
   display: block;
   margin: 0 auto;
+  margin-left: -32px;
   top: 50%;
   left: 50%;
   height: 64px;
@@ -70,7 +78,7 @@ button {
 }
 #logo-wrapper hr {
   height: 1px;
-  max-width: 420px;
+  max-width: 23.33333333em;
   margin: 3px auto;
   border: none;
   background-color: #FFF;
@@ -112,6 +120,9 @@ h3#logo-subtext {
   text-align: center;
   font-size: 2.4em;
   margin-top: 30px;
+}
+h3#logo-subtext span {
+  margin: 0 0.55555556em;
 }
 hr {
   color: #FFF;
@@ -160,10 +171,16 @@ header .title {
   height: 48px;
   margin: 30px 10px;
   padding: 10px;
+  border: 0px solid #FFF;
+  border-radius: 50px;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 .icon.small.selected {
   border: 2px solid #FFF;
-  border-radius: 50px;
   cursor: auto;
   opacity: 0.7;
 }
@@ -238,10 +255,16 @@ section#projects article.project .project-logo.small {
   height: 48px;
   margin: 30px 10px;
   padding: 10px;
+  border: 0px solid #FFF;
+  border-radius: 50px;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 section#projects article.project .project-logo.small.selected {
   border: 2px solid #FFF;
-  border-radius: 50px;
   cursor: auto;
   opacity: 0.7;
 }
@@ -272,23 +295,23 @@ section#projects article.project .project-name {
   display: inline-block;
   color: #222;
   font-size: 2.5em;
-  margin: 0 20px;
-  line-height: 97px;
+  margin: 0 1.11111111em;
+  line-height: 2.5em;
   vertical-align: top;
 }
 section#projects article.project .project-description {
-  padding: 30px;
+  padding: 1.66666667em;
   color: #222;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 section#projects article.project .tech-title {
   font-size: 1.2em;
   color: #000;
-  margin-bottom: 10px;
+  margin-bottom: 0.55555556em;
 }
 section#projects article.project ul#tech-list {
   list-style: none;
-  margin: 20px auto;
+  margin: 1.11111111em auto;
   padding: 0;
   text-align: center;
 }
@@ -301,7 +324,7 @@ section#projects article.project ul#tech-list li.tech {
   background-position: 13px 13px;
   background-repeat: no-repeat;
   border-radius: 100px;
-  margin: 5px;
+  margin: 0.27777778em;
   -webkit-transition: 0.2s ease-out;
   -moz-transition: 0.2s ease-out;
   -ms-transition: 0.2s ease-out;
@@ -316,10 +339,11 @@ section#projects article.project ul#tech-list li.tech:hover {
   display: inline-block;
   height: 40px;
   padding: 0px;
-  background: #DDD;
+  background: #FFF;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  z-index: 999;
   -webkit-transition: opacity 0.2s ease-out;
   -moz-transition: opacity 0.2s ease-out;
   -ms-transition: opacity 0.2s ease-out;
@@ -340,14 +364,19 @@ section#projects article.project ul#tech-list li.tech:hover {
   margin-left: -15px;
   border-style: solid;
   border-width: 15px 15px 0;
-  border-color: #DDD transparent;
+  border-color: #FFF transparent;
   display: block;
   width: 0;
   z-index: 1;
 }
 header ul#profile-menu {
+  position: absolute;
+  display: block;
+  z-index: 999;
   padding: 0;
   font-size: 1.4em;
+  width: 100%;
+  padding: 10px 0;
 }
 header ul#profile-menu li {
   display: inline-block;
@@ -364,11 +393,11 @@ header ul#profile-menu li:hover {
   opacity: 1;
 }
 section#profile-items {
-  margin-top: 50px;
+  margin-top: 80px;
   text-align: center;
 }
 section#profile-items article.profile-item {
-  padding: 50px;
+  padding: 2.77777778em;
 }
 section#profile-items article.profile-item#education-item {
   border-top: 10px solid #e67e22;
@@ -444,7 +473,6 @@ section#profile-items article.profile-item ul.timeline-items .timeline {
   width: 6px;
   background-color: #333;
   border-radius: 10px;
-  margin-top: -10px;
 }
 section#profile-items article.profile-item ul.timeline-items .timeline-item {
   position: relative;
@@ -475,7 +503,7 @@ section#profile-items article.profile-item ul.timeline-items .timeline-item .tim
   width: 80%;
   max-width: 600px;
   min-width: 100px;
-  padding: 30px;
+  padding: 1.66666667em;
   margin: 0 auto;
   background-color: #F5F5F5;
   box-shadow: 0 0 8px 0px #BBB;
@@ -516,7 +544,7 @@ section#profile-items article.profile-item ul.skill-boxes {
 section#profile-items article.profile-item ul.skill-boxes .skill-box {
   display: inline-block;
   margin: 10px;
-  width: 400px;
+  width: 22.22222222em;
   background-color: #222;
 }
 section#profile-items article.profile-item ul.skill-boxes .skill-box .skill-header {
@@ -588,6 +616,7 @@ section#profile-items article.profile-item h2.misc-skills ul.misc-skill-list .mi
   display: inline-block;
   padding: 5px 10px;
   border: 1px solid #000;
+  margin: 3px 0;
 }
 section#profile-items article.profile-item ul.misc-table {
   padding: 0;
@@ -599,7 +628,7 @@ section#profile-items article.profile-item ul.misc-table .misc-item {
   background-color: #EEE;
   color: #333;
   padding: 10px 0;
-  font-size: 1.7em;
+  font-size: 1.2em;
 }
 section#profile-items article.profile-item ul.misc-table .misc-item:nth-child(2n) {
   background-color: #E5E5E5;
@@ -638,10 +667,10 @@ footer section.social {
 }
 footer section.social h1.title {
   margin: 0;
+  margin-bottom: 1.11111111em;
 }
 footer section.social span.footer-icon {
   display: inline-block;
-  margin: 20px 0;
   width: 80px;
   height: 80px;
   background-size: 80px 80px;
@@ -671,4 +700,92 @@ footer section.social span.copyright {
   font-family: 'futura-pt', sans-serif;
   font-weight: 400;
   font-size: 1.4em;
+}
+@media all and (max-width: 640px) {
+  body {
+    font-size: 12px !important;
+  }
+  .mobile {
+    display: block;
+    color: #000;
+  }
+  .timeline,
+  .date {
+    display: none !important;
+  }
+  nav#side-menu {
+    position: relative;
+    text-align: center;
+  }
+  nav#side-menu .small.icon {
+    display: inline-block;
+  }
+  .full-page {
+    padding-top: 175px;
+    height: auto;
+    min-height: 0px;
+  }
+  #wrapper {
+    padding-top: 50px;
+  }
+  header ul#profile-menu {
+    display: none;
+  }
+  .skill-box {
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+  .profile-item {
+    padding: 2em 1.11111111em !important;
+  }
+  .project-description {
+    padding: 0.83333333em !important;
+  }
+  ul.misc-table {
+    width: 100% !important;
+  }
+  #logo-text {
+    margin-top: 30px !important;
+    font-size: 2em;
+  }
+}
+@media all and (max-width: 1200px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 1000px) {
+  .timeline-sub-item {
+    display: block !important;
+  }
+  .timeline-sub-item .timeline-sub-image {
+    margin: 10px auto;
+    display: block !important;
+  }
+  .timeline-sub-item .timeline-sub-data {
+    display: block !important;
+  }
+  .timeline {
+    margin-top: 0 !important;
+  }
+  #logo-subtext {
+    margin-bottom: 0 !important;
+    margin-top: 15px !important;
+  }
+  #logo-subtext span {
+    margin: 0 10px!important;
+    font-size: 0.8em;
+  }
+  #home-menu {
+    margin-top: 20px !important;
+  }
+  .white-card {
+    background-image: url(../img/pattern.png);
+    background-color: #FFF;
+    width: 90%;
+    min-width: 0px;
+    margin: 1.66666667em auto;
+    padding: 1.66666667em 1.11111111em;
+    box-shadow: 0 0 10px #000;
+  }
 }
