@@ -22,6 +22,12 @@ body.no-scroll {
   margin: 30px;
   display: inline-block;
 }
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
 @-webkit-keyframes rotating {
   from {
     -webkit-transform: rotate(0deg);
@@ -502,6 +508,7 @@ section#profile-items article.profile-item ul.timeline-items .timeline-item .dat
   left: 0;
   margin-left: -10px;
   top: 37%;
+  z-index: 2;
 }
 section#profile-items article.profile-item ul.timeline-items .timeline-item .date-wrapper .timeline-dot {
   display: inline-block;
@@ -513,19 +520,35 @@ section#profile-items article.profile-item ul.timeline-items .timeline-item .dat
 }
 section#profile-items article.profile-item ul.timeline-items .timeline-item .date-wrapper .date {
   display: inline-block;
-  vertical-align: top;
-  max-width: 100px;
+  vertical-align: middle;
+  max-width: 50px;
   font-size: 0.7em;
-  margin-top: 0.3em;
+  margin-top: -1em;
+  text-align: left;
+}
+section#profile-items article.profile-item ul.timeline-items .timeline-item a {
+  cursor: default;
 }
 section#profile-items article.profile-item ul.timeline-items .timeline-item .timeline-data {
+  position: relative;
+  margin: 0 auto;
   width: 80%;
-  max-width: 600px;
+  max-width: 560px;
   min-width: 100px;
   padding: 1.66666667em;
-  margin: 0 auto;
   background-color: #F5F5F5;
   box-shadow: 0 0 8px 0px #BBB;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+section#profile-items article.profile-item ul.timeline-items .timeline-item .timeline-data:hover {
+  box-shadow: 0 0 16px 2px #BBB;
 }
 section#profile-items article.profile-item ul.timeline-items .timeline-item .timeline-data .timeline-sub-item {
   position: relative;
@@ -587,6 +610,15 @@ section#profile-items article.profile-item ul.skill-boxes .skill-box ul.skills .
   font-size: 1.2em;
   padding: 12px 0;
   position: relative;
+  color: #FFF;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+section#profile-items article.profile-item ul.skill-boxes .skill-box ul.skills .skill:hover {
+  background-color: #111;
 }
 section#profile-items article.profile-item ul.skill-boxes .skill-box ul.skills .skill .skill-title {
   display: inline-block;
@@ -632,10 +664,19 @@ section#profile-items article.profile-item h2.misc-skills ul.misc-skill-list {
   color: #111;
 }
 section#profile-items article.profile-item h2.misc-skills ul.misc-skill-list .misc-skill-item {
+  color: #111;
   display: inline-block;
   padding: 5px 10px;
   border: 1px solid #000;
   margin: 3px 0;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+section#profile-items article.profile-item h2.misc-skills ul.misc-skill-list .misc-skill-item:hover {
+  background-color: #ddd;
 }
 section#profile-items article.profile-item ul.misc-table {
   padding: 0;
@@ -774,6 +815,9 @@ footer section.social span.copyright {
   }
 }
 @media all and (max-width: 1000px) {
+  .timeline-data {
+    max-width: 400px !important;
+  }
   .timeline-sub-item {
     display: block !important;
   }

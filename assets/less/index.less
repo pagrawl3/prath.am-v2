@@ -28,6 +28,14 @@ body {
      display: inline-block;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
 @-webkit-keyframes rotating {
     from{
         -webkit-transform: rotate(0deg);
@@ -491,6 +499,7 @@ section#profile-items {
 					left: 0;
 					margin-left: -10px;
 					top: (50%-13px);
+					z-index: 2;
 					.timeline-dot {
 						display: inline-block;
 						background-color: #DDD;
@@ -502,23 +511,32 @@ section#profile-items {
 					}
 					.date {
 						display: inline-block;
-						vertical-align: top;
-						max-width: 100px;
+						vertical-align: middle;
+						max-width: 50px;
 						font-size: 0.7em;
-						margin-top: 0.3em;
+						margin-top: -1em;
+						text-align: left;
 					}
 				}
-
+				a {
+					cursor: default;
+				}
 				.timeline-data {
-					width: 80%;
-					max-width: 600px;
-					min-width: 100px;
-					// height: unit(100px/18px, em);
-					padding: unit(30px/18px, em);
-					// height: 200px;
+					position: relative;
 					margin: 0 auto;
+					width: 80%;
+					max-width: 560px;
+					min-width: 100px;
+					padding: unit(30px/18px, em);
 					background-color: #F5F5F5;
 					box-shadow: 0 0 8px 0px #BBB;
+					color: #333;
+					text-decoration: none;
+					cursor: pointer;
+					.transition;
+					&:hover {
+						box-shadow: 0 0 16px 2px #BBB;
+					}
 
 					.timeline-sub-item {
 						position: relative;
@@ -588,7 +606,13 @@ section#profile-items {
 						font-size: 1.2em;
 						padding: 12px 0;
 						position: relative;
+						color: #FFF;
 						@size: 32px;
+						.transition;
+						&:hover {
+							background-color: #111;
+						}
+
 						.skill-title {
 							display: inline-block;
 							line-height: @size;
@@ -637,10 +661,15 @@ section#profile-items {
 				list-style: none;
 				color: #111;
 				.misc-skill-item {
+					color: #111;
 					display: inline-block;
 					padding: 5px 10px;
 					border: 1px solid #000;
 					margin: 3px 0;
+					.transition;
+					&:hover {
+						background-color: #ddd;
+					}
 				}
 			}
 		}
@@ -801,6 +830,10 @@ footer {
 }
 
 @media all and (max-width: 1000px) {
+	.timeline-data {
+		max-width: 400px !important;
+	}
+
 	.timeline-sub-item {
 		display: block !important;
 		.timeline-sub-image {

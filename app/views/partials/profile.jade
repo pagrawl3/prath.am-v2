@@ -17,13 +17,14 @@ section#profile-items
 					.date-wrapper
 						.timeline-dot
 						.date #{item.year}
-					.timeline-data
-						.timeline-sub-item
-							.timeline-sub-image(style="background-image: url(../img#{item.logo});")
-							.timeline-sub-data
-								h3.timeline-sub-name #{item.title}
-								h3.timeline-sub-type #{item.type}
-								h3.timeline-sub-type.mobile #{item.year}
+					a(href="#{item.link}", target="_blank")
+						.timeline-data
+							.timeline-sub-item
+								.timeline-sub-image(style="background-image: url(../img#{item.logo});")
+								.timeline-sub-data
+									h3.timeline-sub-name #{item.title}
+									h3.timeline-sub-type #{item.type}
+									h3.timeline-sub-type.mobile #{item.year}
 			
 	article.profile-item.white-card#experience-item
 		.profile-icon#experience(style="background-image: url(../img/experience.svg);")
@@ -36,13 +37,14 @@ section#profile-items
 					.date-wrapper
 						.timeline-dot
 						.date #{job.year}
-					.timeline-data
-						.timeline-sub-item
-							.timeline-sub-image(style="background-image: url(../img#{job.logo});")
-							.timeline-sub-data
-								h3.timeline-sub-name #{job.title}
-								h3.timeline-sub-type #{job.job}
-								h3.timeline-sub-type.mobile #{job.year}
+					a(href="#{job.link}", target="_blank")
+						.timeline-data
+							.timeline-sub-item
+								.timeline-sub-image(style="background-image: url(../img#{job.logo});")
+								.timeline-sub-data
+									h3.timeline-sub-name #{job.title}
+									h3.timeline-sub-type #{job.job}
+									h3.timeline-sub-type.mobile #{job.year}
 
 	article.profile-item.white-card#skills-item
 		.profile-icon#skills(style="background-image: url(../img/skills.svg);")
@@ -55,20 +57,22 @@ section#profile-items
 					.skill-sub-header #{box.subtitle}
 					ul.skills
 						- each skill in box.skillset
-							li.skill
-								.skill-title #{skill.title}
-								if skill.score > 7
-									.skill-score.high #{skill.score}
-								else if skill.score > 5
-									.skill-score.medium #{skill.score}
-								else
-									.skill-score.low #{skill.score}
-								hr
+							a(href="#{skill.link}", target="_blank")
+								li.skill
+									.skill-title #{skill.title}
+									if skill.score > 7
+										.skill-score.high #{skill.score}
+									else if skill.score > 5
+										.skill-score.medium #{skill.score}
+									else
+										.skill-score.low #{skill.score}
+									hr
 
 			h2.misc-skills MISCELLANEOUS SKILLS
 				ul.misc-skill-list
 					- each misc in profile.skills.misc
-						li.misc-skill-item #{misc.title}
+						a(href="#{misc.link}", target="_blank")
+							li.misc-skill-item #{misc.title}
 					
 	article.profile-item.white-card#misc-item
 		.profile-icon#misc(style="background-image: url(../img/misc.svg);")

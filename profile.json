@@ -6,7 +6,7 @@
 				"type"		: "High School",
 				"logo"		: "/education/dps.png",
 				"year"		: 2011,
-				"link"		: "http://google.com",
+				"link"		: "http://dpsrkp.net",
 				"courses"	: []
 			},
 			{
@@ -14,7 +14,7 @@
 				"type"		: "BSc. Computer Engineering",
 				"logo"		: "/education/illinois.png",
 				"year"		: 2015,
-				"link"		: "http://google.com",
+				"link"		: "http://illinois.edu",
 				"courses"	: [
 					{
 						"title"	: "ECE 110",
@@ -73,27 +73,27 @@
 					"skillset"	: [
 						{
 							"title"	: "Core CSS/HTML",
-							"link"	: "http://google.com",
+							"link"	: "http://www.w3.org/wiki/The_web_standards_model_-_HTML_CSS_and_JavaScript",
 							"score"	: 9
 						},
 						{
 							"title"	: "Core Javascript",
-							"link"	: "http://google.com",
+							"link"	: "https://developer.mozilla.org/en/docs/Web/JavaScript",
 							"score"	: 8
 						},
 						{
 							"title"	: "JQuery/ZeptoJS",
-							"link"	: "http://google.com",
+							"link"	: "http://jquery.com",
 							"score"	: 9
 						},
 						{
 							"title"	: "LESS CSS",
-							"link"	: "http://google.com",
+							"link"	: "http://lesscss.org/",
 							"score"	: 8
 						},
 						{
 							"title"	: "Jade",
-							"link"	: "http://google.com",
+							"link"	: "http://jade-lang.com/",
 							"score"	: 8
 						}
 					]
@@ -104,27 +104,27 @@
 					"skillset"	: [
 						{
 							"title"	: "nodeJS",
-							"link"	: "http://google.com",
+							"link"	: "http://nodejs.org/",
 							"score"	: 9
 						},
 						{
 							"title"	: "AWS",
-							"link"	: "http://google.com",
+							"link"	: "http://aws.amazon.com/",
 							"score"	: 8
 						},
 						{
 							"title"	: "Express",
-							"link"	: "http://google.com",
+							"link"	: "http://expressjs.com/",
 							"score"	: 8
 						},
 						{
 							"title"	: "mongoDB",
-							"link"	: "http://google.com",
+							"link"	: "http://www.mongodb.org/",
 							"score"	: 7
 						},
 						{
 							"title"	: "Socket.IO",
-							"link"	: "http://google.com",
+							"link"	: "http://socket.io/",
 							"score"	: 7
 						}
 					]
@@ -135,27 +135,27 @@
 					"skillset"	: [
 						{
 							"title"	: "C/C++",
-							"link"	: "http://google.com",
+							"link"	: "https://isocpp.org/",
 							"score"	: 8
 						},
 						{
 							"title"	: "Python",
-							"link"	: "http://google.com",
+							"link"	: "https://www.python.org/",
 							"score"	: 7
 						},
 						{
 							"title"	: "Objective-C",
-							"link"	: "http://google.com",
+							"link"	: "https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
 							"score"	: 6
 						},
 						{
 							"title"	: "Swift",
-							"link"	: "http://google.com",
+							"link"	: "https://developer.apple.com/swift/",
 							"score"	: 6
 						},
 						{
 							"title"	: "Java",
-							"link"	: "http://google.com",
+							"link"	: "http://en.wikipedia.org/wiki/Java_(programming_language)",
 							"score"	: 2
 						}
 					]
@@ -166,27 +166,27 @@
 					"skillset"	: [
 						{
 							"title"	: "Photoshop",
-							"link"	: "http://google.com",
+							"link"	: "http://www.photoshop.com/",
 							"score"	: 9
 						},
 						{
 							"title"	: "After Effects",
-							"link"	: "http://google.com",
+							"link"	: "http://www.adobe.com/in/products/aftereffects.html",
 							"score"	: 8
 						},
 						{
 							"title"	: "Cinema4D",
-							"link"	: "http://google.com",
+							"link"	: "http://www.maxon.net/en/products/cinema-4d-studio/who-should-use-it.html",
 							"score"	: 7
 						},
 						{
 							"title"	: "Flash",
-							"link"	: "http://google.com",
+							"link"	: "http://www.adobe.com/products/flash.html",
 							"score"	: 7
 						},
 						{
 							"title"	: "Illustrator",
-							"link"	: "http://google.com",
+							"link"	: "http://www.adobe.com/in/products/illustrator.html",
 							"score"	: 5
 						}
 					]
@@ -195,7 +195,7 @@
 			"misc" : [
 				{
 					"title" : "Git",
-					"link"	: "http://google.com"
+					"link"	: "http://git-scm.com/"
 				},
 				{
 					"title" : "Console/Terminal",
@@ -203,31 +203,27 @@
 				},
 				{
 					"title" : "Arduino",
-					"link"	: "http://google.com"
+					"link"	: "http://www.arduino.cc/"
 				},
 				{
 					"title" : "Raspberry Pi",
-					"link"	: "http://google.com"
+					"link"	: "http://www.raspberrypi.org/"
 				},
 				{
 					"title" : "Foundation CSS",
-					"link"	: "http://google.com"
+					"link"	: "http://foundation.zurb.com/"
 				},
 				{
 					"title" : "Sensor & Wireless Mesh Networks",
-					"link"	: "http://google.com"
+					"link"	: "http://www.zigbee.org/"
 				},
 				{
 					"title" : "Spotify API",
-					"link"	: "http://google.com"
+					"link"	: "https://developer.spotify.com/"
 				},
 				{
 					"title" : "Twilio API",
-					"link"	: "http://google.com"
-				},
-				{
-					"title" : "Something Else Here",
-					"link"	: "http://google.com"
+					"link"	: "http://www.twilio.com/"
 				}
 			]
 		},
