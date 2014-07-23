@@ -784,9 +784,6 @@ footer section.social span.copyright {
     height: auto;
     min-height: 0px;
   }
-  #wrapper {
-    padding-top: 50px;
-  }
   header ul#profile-menu {
     display: none;
   }
