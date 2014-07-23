@@ -779,13 +779,6 @@ footer section.social span.copyright {
   .date {
     display: none !important;
   }
-  nav#side-menu {
-    position: relative;
-    text-align: center;
-  }
-  nav#side-menu .small.icon {
-    display: inline-block;
-  }
   .full-page {
     padding-top: 175px;
     height: auto;
@@ -821,6 +814,13 @@ footer section.social span.copyright {
   }
 }
 @media all and (max-width: 1000px) {
+  nav#side-menu {
+    position: relative;
+    text-align: center;
+  }
+  nav#side-menu .small.icon {
+    display: inline-block;
+  }
   .timeline-data {
     max-width: 400px !important;
   }
