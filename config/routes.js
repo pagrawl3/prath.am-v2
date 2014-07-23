@@ -7,6 +7,7 @@ module.exports = function(app, io, spotify, mpdplay) {
 	//__Routes
 	app.get('/partials/:partial', main.partial);
 	app.get('/json', main.getJSON);
+	app.get('/cv', main.cv);
 	app.get('/*', main.index);
 
 }

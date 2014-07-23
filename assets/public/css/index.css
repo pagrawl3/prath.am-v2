@@ -225,6 +225,9 @@ header .title {
 .icon.projects {
   background-image: url(../img/projects_white.svg);
 }
+.icon.cv {
+  background-image: url(../img/cv.svg);
+}
 .icon:hover {
   -webkit-transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
@@ -308,6 +311,9 @@ section#projects article.project .project-logo.profile {
 }
 section#projects article.project .project-logo.projects {
   background-image: url(../img/projects_white.svg);
+}
+section#projects article.project .project-logo.cv {
+  background-image: url(../img/cv.svg);
 }
 section#projects article.project .project-logo:hover {
   -webkit-transform: scale(1.1, 1.1);

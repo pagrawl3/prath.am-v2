@@ -14,6 +14,14 @@ exports.index = function(req, res) {
 	res.render('index');
 }
 
+exports.cv = function(req, res) {
+	var tempFile = path.resolve(__dirname, '../../assets/public/downloads') + '/cv.pdf';
+	fs.readFile(tempFile, function (err,data){
+		res.contentType("application/pdf");
+		res.send(data);
+	});
+}
+
 exports.partial = function(req, res) {
 	var pathToTemplate = path.resolve(__dirname, '../views/partials') + '/' + req.params.partial + '.jade',
 		template = fs.readFileSync(pathToTemplate, 'utf8'),
