@@ -771,6 +771,9 @@ footer section.social span.copyright {
   body {
     font-size: 12px !important;
   }
+  .cv {
+    display: none !important;
+  }
   .mobile {
     display: block;
     color: #000;
