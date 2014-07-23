@@ -815,8 +815,9 @@ footer section.social span.copyright {
 }
 @media all and (max-width: 1000px) {
   nav#side-menu {
-    position: relative;
+    position: absolute;
     text-align: center;
+    width: 100%;
   }
   nav#side-menu .small.icon {
     display: inline-block;
